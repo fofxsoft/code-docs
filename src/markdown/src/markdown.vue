@@ -38,10 +38,10 @@
                         const links = document.getElementsByTagName("a");
 
                         Object.keys(links).forEach((key) => {
-                            const href = fields[key].getAttribute("href");
+                            const href = links[key].getAttribute("href");
 
                             if (href && !href.startsWith("#") && !href.startsWith("javascript:")) {
-                                fields[key].setAttribute("target", "_parent");
+                                links[key].setAttribute("target", "_parent");
                             }
                         });
                     }, 100);
