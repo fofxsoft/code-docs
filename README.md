@@ -81,7 +81,7 @@ or
 **[back to top](#)**
 
 ## Methods
-The initialization logic will create the editors object used to access the methods.
+The initialization logic will create the markdown object used to access the methods.
 
 - **get(id)**  
   This is used to get the markdown object.
