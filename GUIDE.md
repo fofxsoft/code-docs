@@ -11,14 +11,29 @@ To create a heading, add number signs (#) in front of a word or phrase. The numb
 should correspond to the heading level. For example, to create a heading level three (&lt;h3&gt;), use three
 number signs (e.g., ### My Header).
 
-| Markdown | HTML | Output |
-| ----------- | ----------- | ----------- |
-| # Heading level 1 | &lt;h1&gt;Heading level 1&lt;/h1&gt; | <h1>Heading level 1</h1> |
-| ## Heading level 2 | &lt;h2&gt;Heading level 2&lt;/h2&gt; | <h2>Heading level 2</h2> |
-| ### Heading level 3 | &lt;h3&gt;Heading level 3&lt;/h3&gt; | <h3>Heading level 3</h3> |
-| #### Heading level 4 | &lt;h4&gt;Heading level 4&lt;/h4&gt; | <h4>Heading level 4</h4> |
-| ##### Heading level 5 | &lt;h5&gt;Heading level 5&lt;/h5&gt; | <h5>Heading level 5</h5> |
-| ###### Heading level 6 | &lt;h6&gt;Heading level 6&lt;/h6&gt; | <h6>Heading level 6</h6> |
+```markdown
+# Heading level 1
+```
+
+```markdown
+## Heading level 2
+```
+
+```markdown
+### Heading level 3
+```
+
+```markdown
+#### Heading level 4
+```
+
+```markdown
+##### Heading level 5
+```
+
+```markdown
+###### Heading level 6
+```
 
 **[back to top](#)**
 
