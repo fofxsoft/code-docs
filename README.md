@@ -63,7 +63,7 @@ or
   Optional. Sets the name of the markdown container.
 
 - **url**  
-  Optional. This will run the defined url to fetch the markdown contents.
+  Optional. This will run the defined url to fetch the markdown code.
   > When using a relative URL, the base is set to the context of the build filder, not the folder you are calling this from.
 
 - **class**  
