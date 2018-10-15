@@ -118,7 +118,7 @@ The initialization logic will create the markdown object used to access the meth
 **[back to top](#)**
 
 ## Events
-Custom events applied to the editor tag.
+Custom events applied to the markdown tag.
 
 - **ready**  
   This event is dispached when the markdown is loaded and ready to accept commands.
