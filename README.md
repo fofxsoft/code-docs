@@ -57,7 +57,7 @@ or
 
 ## Attributes
 - **id**  
-  Required. Defines the id of the markdown container, and defines access key.
+  Required. Defines the id of the markdown container, and defines the access key.
 
 - **name**  
   Optional. Sets the name of the markdown container.
