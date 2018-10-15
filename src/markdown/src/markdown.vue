@@ -41,7 +41,7 @@
                             const href = fields[key].getAttribute("href");
 
                             if (href && !href.startsWith("#") && !href.startsWith("javascript:")) {
-                                fields[key].setAttribute("target", "_blank");
+                                fields[key].setAttribute("target", "_parent");
                             }
                         });
                     }, 100);
