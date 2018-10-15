@@ -5,6 +5,7 @@ A quick reference to the Markdown syntax.
 
   1. [Headings](#headings)
   1. [Paragraphs](#paragraphs)
+  1. [Line Breaks](#line_breaks)
 
 ## Headings
 To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use
@@ -13,25 +14,10 @@ number signs (e.g., ### My Header).
 
 ```markdown
 # Heading level 1
-```
-
-```markdown
 ## Heading level 2
-```
-
-```markdown
 ### Heading level 3
-```
-
-```markdown
 #### Heading level 4
-```
-
-```markdown
 ##### Heading level 5
-```
-
-```markdown
 ###### Heading level 6
 ```
 
@@ -45,6 +31,16 @@ with spaces or tabs.
 I really like using Markdown.
 
 I think I'll use it to format all of my documents from now on.
+```
+
+**[back to top](#)**
+
+## Line Breaks
+To create a line break (&lt;br&gt;), end a line with two or more spaces, and then type return.
+
+```markdown
+This is the first line.  
+And this is the second line.
 ```
 
 **[back to top](#)**
