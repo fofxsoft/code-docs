@@ -41,7 +41,7 @@ First copy the contents of the build folder to your application. Then include th
 **[back to top](#)**
 
 ## Usage
-To include a code editor on your page, simply add the tag.
+To include a markdown display on your page, simply add the tag.
 
 ```html
 <input type="markdown" id="skywalker" name="skywalker" value="">
