@@ -5,7 +5,7 @@ A quick reference to the Markdown syntax.
 
   1. [Headings](#headings)
   1. [Paragraphs](#paragraphs)
-  1. [Line Breaks](#line_breaks)
+  1. [Line Breaks](#line-breaks)
 
 ## Headings
 To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use
