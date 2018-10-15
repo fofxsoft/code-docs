@@ -34,6 +34,16 @@
 
                     setTimeout(() => {
                         prism.highlightAll();
+
+                        const links = document.getElementsByTagName("a");
+
+                        Object.keys(links).forEach((key) => {
+                            const href = fields[key].getAttribute("href");
+
+                            if (href && !href.startsWith("#") && !href.startsWith("javascript:")) {
+                                fields[key].setAttribute("target", "_blank");
+                            }
+                        });
                     }, 100);
                 },
                 get html() {
