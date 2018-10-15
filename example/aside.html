@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="icon" href="favicon.ico">
+    <title>Code Editor</title>
+
+    <link href="editor/editor.css" rel="stylesheet">
+    <script src="editor/editor.js"></script>
+
+    <link href="../build/markdown.css" rel="stylesheet">
+    <script src="../build/markdown.js"></script>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+            font-size: 16pt;
+            color: #545454;
+            background: #f3f3f3;
+            overflow: hidden;
+        }
+
+        header {
+            width: 100%;
+            height: 57px;
+            background: #68217a;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+        }
+
+        header .logo {
+            display: inline-block;
+            height: 27px;
+            margin: 15px 5px 15px 15px;
+        }
+
+        header .title {
+            position: absolute;
+            top: 0;
+            left: 57px;
+            display: inline-block;
+            height: 57px;
+            font-size: 1.2rem;
+            color: #fff;
+            box-sizing: border-box;
+            line-height: 57px;
+        }
+
+        header .title a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header .github {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            display: inline-block;
+            height: 57px;
+            font-size: 0.8rem;
+            color: #fff;
+            box-sizing: border-box;
+            line-height: 57px;
+        }
+
+        header .github a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        article {
+            border-top: 57px transparent solid;
+            box-sizing: border-box;
+            height: 100%;
+            text-align: center;
+        }
+
+        .demo {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .demo table {
+            width: 100%;
+            height: 100%;
+            border-top: 40px #007acc solid;
+            box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 5px;
+        }
+
+        .demo table tr {
+            width: 100%;
+            height: 100%;
+        }
+
+        .demo table tr td {
+            height: 100%;
+        }
+
+        #menu {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 47px 0 7px;
+        }
+
+        #menu .url {
+            width: 100%;
+            box-sizing: border-box;
+            height: 26px;
+            margin: 7px 0 7px 0;
+        }
+
+        #menu input[name=url] {
+            width: 100%;
+            height: 28px;
+            padding: 5px 7px 5px 7px;
+            color: #fff;
+            background: #0b8fe8;
+            border: 0 none;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 12pt;
+            font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+        }
+
+        #menu input:focus {
+            outline: 0;
+        }
+
+        #menu form ::placeholder {
+            color: #fff;
+            opacity: 0.4;
+        }
+
+        #edit {
+            background: #fff;
+            margin-top: 3px;
+            border-radius: 0 0 0 5px;
+        }
+
+        #display {
+            background: #fff;
+            margin-top: 3px;
+            border-radius: 0 0 5px 0;
+            border-left: 1px #dbdbdb solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMjc4LjkgNTExLjVsLTYxLTE3LjdjLTYuNC0xLjgtMTAtOC41LTguMi0xNC45TDM0Ni4yIDguN2MxLjgtNi40IDguNS0xMCAxNC45LTguMmw2MSAxNy43YzYuNCAxLjggMTAgOC41IDguMiAxNC45TDI5My44IDUwMy4zYy0xLjkgNi40LTguNSAxMC4xLTE0LjkgOC4yem0tMTE0LTExMi4ybDQzLjUtNDYuNGM0LjYtNC45IDQuMy0xMi43LS44LTE3LjJMMTE3IDI1Nmw5MC42LTc5LjdjNS4xLTQuNSA1LjUtMTIuMy44LTE3LjJsLTQzLjUtNDYuNGMtNC41LTQuOC0xMi4xLTUuMS0xNy0uNUwzLjggMjQ3LjJjLTUuMSA0LjctNS4xIDEyLjggMCAxNy41bDE0NC4xIDEzNS4xYzQuOSA0LjYgMTIuNSA0LjQgMTctLjV6bTMyNy4yLjZsMTQ0LjEtMTM1LjFjNS4xLTQuNyA1LjEtMTIuOCAwLTE3LjVMNDkyLjEgMTEyLjFjLTQuOC00LjUtMTIuNC00LjMtMTcgLjVMNDMxLjYgMTU5Yy00LjYgNC45LTQuMyAxMi43LjggMTcuMkw1MjMgMjU2bC05MC42IDc5LjdjLTUuMSA0LjUtNS41IDEyLjMtLjggMTcuMmw0My41IDQ2LjRjNC41IDQuOSAxMi4xIDUuMSAxNyAuNnoiLz48L3N2Zz4=">
+        <div class="title"><a href="./">Code Docs</a></div>
+        <div class="github"><a href="https://github.com/fofxsoft/docs" target="_blank">Repository</a></div>
+    </header>
+
+    <article>
+        <div class="demo">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td style="width: 60%;">
+                        <input type="editor" id="edit" language="markdown" url="../docs/example.md">
+                    </td>
+                    <td style="width: 40%;">
+                        <markdown id="display"></markdown>
+                    </td>
+                </tr>
+            </table>
+            <div id="menu">
+                <div class="url">
+                    <form autocomplete="off" action="../build/editor.html" method="GET" target="main">
+                        <input autocomplete="off" type="text" name="url" placeholder="File URL" value="../docs/example.md">
+                    </form>
+                </div>
+            </div>
+        </div> 
+    </article>
+
+    <script>
+        document.getElementById("edit").addEventListener("ready", () => {
+            markdown.get("display").code = editors.get("edit").focus().code;
+        });
+
+        document.getElementById("edit").addEventListener("input", () => {
+            markdown.get("display").code = editors.get("edit").code;
+        });
+    </script>
+</body>
+
+</html>
