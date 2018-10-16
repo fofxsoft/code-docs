@@ -8,8 +8,8 @@ A quick reference to the Markdown syntax.
   1. [Line Breaks](#line-breaks)
   1. [Emphasis](#emphasis)
   1. [Blockquotes](#blockquotes)
-  1. [Ordered Lists](#oordered-lists)
-  1. [Unordered Lists](#uunordered-lists)
+  1. [Ordered Lists](#ordered-lists)
+  1. [Unordered Lists](#unordered-lists)
 
 ## Headings
 To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use
