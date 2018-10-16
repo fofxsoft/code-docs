@@ -16,14 +16,14 @@ To create a heading, add number signs (#) in front of a word or phrase. The numb
 should correspond to the heading level. For example, to create a heading level three (&lt;h3&gt;), use three
 number signs (e.g., ### My Header).
 
-| Markdown       | HTML                         | Output           |
-| -------------- | ---------------------------- | ---------------- |
-| # Level 1      | &lt;h1&gt;Level 1&lt;/h1&gt; | <h1>Level 1</h1> |
-| ## Level 2     | &lt;h2&gt;Level 2&lt;/h2&gt; | <h2>Level 1</h2> |
-| ### Level 3    | &lt;h3&gt;Level 3&lt;/h3&gt; | <h3>Level 1</h3> |
-| #### Level 4   | &lt;h4&gt;Level 4&lt;/h4&gt; | <h4>Level 1</h4> |
-| ##### Level 5  | &lt;h5&gt;Level 5&lt;/h5&gt; | <h5>Level 1</h5> |
-| ###### Level 6 | &lt;h6&gt;Level 6&lt;/h6&gt; | <h6>Level 1</h6> |
+| Markdown            | HTML                              | Output                |
+| ------------------- | --------------------------------- | --------------------- |
+| # Jedi Level 1      | &lt;h1&gt;Jedi Level 1&lt;/h1&gt; | <h1>Jedi Level 1</h1> |
+| ## Jedi Level 2     | &lt;h2&gt;Jedi Level 2&lt;/h2&gt; | <h2>Jedi Level 2</h2> |
+| ### Jedi Level 3    | &lt;h3&gt;Jedi Level 3&lt;/h3&gt; | <h3>Jedi Level 3</h3> |
+| #### Jedi Level 4   | &lt;h4&gt;Jedi Level 4&lt;/h4&gt; | <h4>Jedi Level 4</h4> |
+| ##### Jedi Level 5  | &lt;h5&gt;Jedi Level 5&lt;/h5&gt; | <h5>Jedi Level 5</h5> |
+| ###### Jedi Level 6 | &lt;h6&gt;Jedi Level 6&lt;/h6&gt; | <h6>Jedi Level 6</h6> |
 
 **[back to top](#)**
 
@@ -31,18 +31,18 @@ number signs (e.g., ### My Header).
 To create paragraphs, use a blank line to separate one or more lines of text. You should not indent paragraphs
 with spaces or tabs.
 
-| Markdown                                                                                                  | HTML                                                                                                                                                            | Output                                                                                                                                                                                                                |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p>I really like using Markdown.</p><p>I think I'll use it to format all of my documents from now on.</p> | <p>&lt;p&gt;<br>I really like using Markdown.<br>&lt;/p&gt;</p><p>&lt;p&gt;<br>I think I'll use it to format all of my documents from now on.<br>&lt;/p&gt;</p> | <p>I really like using Markdown.</p><p>I think I'll use it to format all of my documents from now on.</p> | <p>I really like using Markdown.</p><p>I think I'll use it to format all of my documents from now on.</p> |
+| Markdown                                         | HTML                                                                                                   | Output                                           |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------ |
+| <p>The Force will be with you.</p><p>Always.</p> | <p>&lt;p&gt;The Force will be with you.&lt;/p&gt;</p><p>&lt;p&gt;Always.&lt;/p&gt;</p> | <p>The Force will be with you.</p><p>Always.</p> |
 
 **[back to top](#)**
 
 ## <a id="line-breaks"></a>Line Breaks
 To create a line break (&lt;br&gt;), end a line with two or more spaces, and then type return.
 
-| Markdown                                                  | HTML                                                                                         | Output                                                  |
-| --------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| This is the first line. · ·<br>And this is the second line. | &lt;p&gt;<br>This is the first line.&lt;br&gt;<br>And this is the second line.<br>&lt;/p&gt; | This is the first line.<br>And this is the second line. |
+| Markdown                               | HTML                                                            | Output                             |
+| -------------------------------------- | --------------------------------------------------------------- | ---------------------------------- |
+| Do. Or do not. · ·<br>There is no try. | &lt;p&gt;Do. Or do not.&lt;br&gt;<br>There is no try.&lt;/p&gt; | Do. Or do not.<br>There is no try. |
 
 **[back to top](#)**
 
@@ -52,16 +52,19 @@ You can add emphasis by making text bold or italic.
 ### Bold
 To bold text, add two asterisks or underscores before and after a word or phrase. To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.
 
-```markdown
-I just love **bold text**.
-```
+| Markdown               | HTML                                        | Output             |
+| ---------------------- | ------------------------------------------- | ------------------ |
+| \*\*Bold Text\*\*      | &lt;strong&gt;Bold Text&lt;/strong&gt;      | **Bold Text**      |
+| Luke \*\*Skywalker\*\* | Luke &lt;strong&gt;Skywalker&lt;/strong&gt; | Luke **Skywalker** |
 
 ### Italic
 To italicize text, add one asterisk or underscore before and after a word or phrase. To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters.
 
-```markdown
-Italicized text is the *cat's meow*.
-```
+| Markdown            | HTML                                 | Output            |
+| ------------------- | ------------------------------------ | ----------------- |
+| \*Italicized Text\* | &lt;em&gt;Italicized Text&lt;/em&gt; | *Italicized Text* |
+| Han \*Solo\*        | Han &lt;em&gt;Solo&lt;/em&gt;        | Han *Solo*        |
+
 
 ### Bold and Italic
 To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a word or phrase.
