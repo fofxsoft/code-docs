@@ -164,3 +164,8 @@ To create a nested unordered list, simply add 4 spaces in front of the list item
 ```
 
 **[back to top](#)**
+
+| Col 1   | Col 2                                              |
+|======== |====================================================|
+|**bold** | ![Valid XHTML] (http://w3.org/Icons/valid-xhtml10) |
+| Plain   | Value                                              |
