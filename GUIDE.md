@@ -276,9 +276,9 @@ parentheses.
 ![MD](https://robohash.org/markdown)
 ```
 
-The rendered output looks like this:
-
-![MD](https://robohash.org/markdown)
+The rendered output looks like this:  
+![MD](https://robohash.org/markdown)  
+&nbsp;  
 
 ### Linking Images
 To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.
@@ -287,9 +287,9 @@ To add a link to an image, enclose the Markdown for the image in brackets, and t
 [![MD](https://robohash.org/markdown)](https://robohash.org/)
 ```
 
-The rendered output looks like this:
-
-[![MD](https://robohash.org/markdown)](https://robohash.org/)
+The rendered output looks like this:  
+[![MD](https://robohash.org/markdown)](https://robohash.org/)  
+&nbsp;  
 
 [Back to Top](#)
 
