@@ -273,23 +273,23 @@ or URL to the image asset in parentheses. You can optionally add a title after t
 parentheses.
 
 ```markdown
-![Markdown](https://badgen.net/badge/Markdown/Guide/blue)
+![MD](https://robohash.org/markdown)
 ```
 
 The rendered output looks like this:
 
-![Markdown](https://badgen.net/badge/Markdown/Guide/blue)
+![MD](https://robohash.org/markdown)
 
 ### Linking Images
 To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.
 
 ```markdown
-[![MD](https://badgen.net/badge/Markdown/Guide/blue)](https://badgen.net/)
+[![MD](https://robohash.org/markdown)](https://robohash.org/)
 ```
 
 The rendered output looks like this:
 
-[![MD](https://badgen.net/badge/Markdown/Guide/blue)](https://badgen.net/)
+[![MD](https://robohash.org/markdown)](https://robohash.org/)
 
 [Back to Top](#)
 
