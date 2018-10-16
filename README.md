@@ -28,7 +28,7 @@ $ npm run build
 
 > The build process will deploy to the build folder.
 
-**[back to top](#)**
+[back to top](#)
 
 ## Installing
 First copy the contents of the build folder to your application. Then include the following in your HTML.
@@ -38,7 +38,7 @@ First copy the contents of the build folder to your application. Then include th
 <script src="/lib/markdown/markdown.js"></script>
 ```
 
-**[back to top](#)**
+[back to top](#)
 
 ## Usage
 To include a markdown display on your page, simply add the tag.
@@ -53,7 +53,7 @@ or
 <markdown id="skywalker" name="skywalker"></markdown>
 ```
 
-**[back to top](#)**
+[back to top](#)
 
 ## Attributes
 - **id**  
@@ -78,7 +78,7 @@ or
 - **innerText**  
   Optional. This is only available for the markdown tag. The innerText will populate the markdown.
 
-**[back to top](#)**
+[back to top](#)
 
 ## Methods
 The initialization logic will create the markdown object used to access the methods.
@@ -115,7 +115,7 @@ The initialization logic will create the markdown object used to access the meth
   const html = md.html;
   ```
 
-**[back to top](#)**
+[back to top](#)
 
 ## Events
 Custom events applied to the markdown tag.
@@ -129,9 +129,9 @@ Custom events applied to the markdown tag.
   });
   ```
 
-**[back to top](#)**
+[back to top](#)
 
 ## License
 [MIT](https://github.com/fofxsoft/code-editor/blob/master/LICENSE.md)
 
-**[back to top](#)**
+[back to top](#)
