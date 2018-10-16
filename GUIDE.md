@@ -234,6 +234,8 @@ The rendered output looks like this:
 
 ---
 
+[Back to Top](#)
+
 ## <a id="links"></a>Links
 To create a link, enclose the link text in brackets (e.g., [Google]) and then follow it immediately
 with the URL in parentheses (e.g., (https://google.com)).
