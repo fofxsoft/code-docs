@@ -312,9 +312,9 @@ If the word or phrase you want to denote as code includes one or more tick marks
 To create code blocks, start a line with three tick marks (```).
 
 ```markdown
- ```
- $ npm install --save-dev
- ```
+'''
+$ npm install --save-dev
+'''
 ```
 
 The rendered output looks like this:
@@ -327,10 +327,10 @@ $ npm install --save-dev
 To create a syntax highlighted code block, you simply add the language on the first line.
 
 ```markdown
- ```html
- <link href="/lib/markdown/markdown.css" rel="stylesheet">
- <script src="/lib/markdown/markdown.js"></script>
- ```
+'''html
+<link href="/lib/markdown/markdown.css" rel="stylesheet">
+<script src="/lib/markdown/markdown.js"></script>
+'''
 ```
 
 Supported Languages
