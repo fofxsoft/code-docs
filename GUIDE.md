@@ -31,11 +31,9 @@ number signs (e.g., ### My Header).
 To create paragraphs, use a blank line to separate one or more lines of text. You should not indent paragraphs
 with spaces or tabs.
 
-```markdown
-I really like using Markdown.
-
-I think I'll use it to format all of my documents from now on.
-```
+| Markdown                                                                                                  | HTML                                                                                                                                                            | Output                                                                                                                                                                                                                |
+| --------------------------------------------------------------------------------------------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p>I really like using Markdown.</p><p>I think I'll use it to format all of my documents from now on.</p> | <p>&lt;p&gt;<br>I really like using Markdown.<br>&lt;/p&gt;</p><p>&lt;p&gt;<br>I think I'll use it to format all of my documents from now on.<br>&lt;/p&gt;</p> | <p>I really like using Markdown.</p><p>I think I'll use it to format all of my documents from now on.</p> | <p>I really like using Markdown.</p><p>I think I'll use it to format all of my documents from now on.</p> |
 
 **[back to top](#)**
 
