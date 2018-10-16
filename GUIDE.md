@@ -11,7 +11,7 @@ A quick reference to the Markdown syntax.
   1. [Ordered Lists](#ordered-lists)
   1. [Unordered Lists](#unordered-lists)
 
-## Headings <a id="headings">
+## <a id="headings">Headings
 To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use
 should correspond to the heading level. For example, to create a heading level three (&lt;h3&gt;), use three
 number signs (e.g., ### My Header).
@@ -27,7 +27,7 @@ number signs (e.g., ### My Header).
 
 **[back to top](#)**
 
-## Paragraphs <a id="paragraphs">
+## <a id="paragraphs">Paragraphs
 To create paragraphs, use a blank line to separate one or more lines of text. You should not indent paragraphs
 with spaces or tabs.
 
@@ -39,7 +39,7 @@ I think I'll use it to format all of my documents from now on.
 
 **[back to top](#)**
 
-## Line Breaks <a id="line-breaks">
+## <a id="line-breaks">Line Breaks
 To create a line break (&lt;br&gt;), end a line with two or more spaces, and then type return.
 
 ```markdown
@@ -49,7 +49,7 @@ And this is the second line.
 
 **[back to top](#)**
 
-## Emphasis <a id="emphasis">
+## <a id="emphasis">Emphasis
 You can add emphasis by making text bold or italic.
 
 ### Bold
@@ -75,7 +75,7 @@ This text is ***really important***.
 
 **[back to top](#)**
 
-## Blockquotes <a id="blockquotes">
+## <a id="blockquotes">Blockquotes
 To create a blockquote, add a &gt; in front of a paragraph.
 
 ```markdown
@@ -115,7 +115,7 @@ Blockquotes can contain other Markdown formatted elements. Not all elements can 
 
 **[back to top](#)**
 
-## Ordered Lists <a id="ordered-lists">
+## <a id="ordered-lists">Ordered Lists
 To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to
 be in numerical order, but the list should start with the number one.
 
@@ -140,7 +140,7 @@ To create a nested ordered list, simply add 4 spaces in front of the list item.
 
 **[back to top](#)**
 
-## Unordered Lists <a id="unordered-lists">
+## <a id="unordered-lists">Unordered Lists
 To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items.
 Indent one or more items to create a nested list.
 
