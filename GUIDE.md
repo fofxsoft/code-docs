@@ -8,6 +8,8 @@ A quick reference to the Markdown syntax.
   1. [Line Breaks](#line-breaks)
   1. [Emphasis](#emphasis)
   1. [Blockquotes](#blockquotes)
+  1. [Ordered Lists](#ordered-lists)
+  1. [Unordered Lists](#unordered-lists)
 
 ## Headings
 To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use
@@ -109,6 +111,56 @@ Blockquotes can contain other Markdown formatted elements. Not all elements can 
 > - Profits were higher than ever.
 >
 >  *Everything* is going according to **plan**.
+```
+
+**[back to top](#)**
+
+## Ordered Lists
+To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to
+be in numerical order, but the list should start with the number one.
+
+```markdown
+1. First item
+1. Second item
+1. Third item
+1. Fourth item
+```
+
+### Nested Ordered Lists
+To create a nested ordered list, simply add 4 spaces in front of the list item.
+
+```markdown
+1. First item
+1. Second item
+1. Third item
+    1. Indented item
+    1. Indented item
+1. Fourth item
+```
+
+**[back to top](#)**
+
+## Unordered Lists
+To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items.
+Indent one or more items to create a nested list.
+
+```markdown
+- First item
+- Second item
+- Third item
+- Fourth item
+```
+
+### Nested Unordered Lists
+To create a nested unordered list, simply add 4 spaces in front of the list item.
+
+```markdown
+- First item
+- Second item
+- Third item
+    - Indented item
+    - Indented item
+- Fourth item
 ```
 
 **[back to top](#)**
