@@ -140,8 +140,8 @@ The rendered output looks like this:
 To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to
 be in numerical order, but the list should start with the number one.
 
-> You can use other items like; paragraphs, line breaks, links, images, etc ...
-> in each item in a list.
+> You can use other elements like; paragraphs, line breaks, links, images, etc ...
+> within each item.
 
 ```markdown
 1. First item
@@ -182,8 +182,8 @@ The rendered output looks like this:
 To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items.
 Indent one or more items to create a nested list.
 
-> You can use other items like; paragraphs, line breaks, links, images, etc ...
-> in each item in a list.
+> You can use other elements like; paragraphs, line breaks, links, images, etc ...
+> within each item.
 
 ```markdown
 - First item
