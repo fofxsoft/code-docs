@@ -626,6 +626,7 @@
 
     .markdown-body table th {
         font-weight: 600;
+        background: #dfe2e5;
     }
 
     .markdown-body table th,
