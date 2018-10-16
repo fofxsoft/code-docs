@@ -69,9 +69,9 @@ To italicize text, add one asterisk or underscore before and after a word or phr
 ### Bold and Italic
 To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a word or phrase.
 
-```markdown
-This text is ***really important***.
-```
+| Markdown               | HTML                                                         | Output          |
+| ---------------------- | ------------------------------------------------------------ | --------------- |
+| The \*\*\*Force\*\*\*. | The &lt;strong&gt;&lt;em&gt;Force&lt;/em&gt;&lt;/strong&gt;. | The ***Force*** |
 
 **[back to top](#)**
 
@@ -79,39 +79,60 @@ This text is ***really important***.
 To create a blockquote, add a &gt; in front of a paragraph.
 
 ```markdown
-> Dorothy followed her through many of the beautiful rooms in her castle.
+> Why, you stuck-up, half-witted, scruffy-looking nerf herder!
 ```
+
+The rendered output looks like this:
+> Why, you stuck-up, half-witted, scruffy-looking nerf herder!
 
 ### Blockquotes with Multiple Paragraphs
 Blockquotes can contain multiple paragraphs. Add a > on the blank lines between the paragraphs.
 
 ```markdown
-> Dorothy followed her through many of the beautiful rooms in her castle.
+> Why, you stuck-up, half-witted, scruffy-looking nerf herder!
 >
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+> As far as Star Wars insults go, this one takes the cake. No contest.
 ```
+
+The rendered output looks like this:
+> Why, you stuck-up, half-witted, scruffy-looking nerf herder!
+>
+> As far as Star Wars insults go, this one takes the cake. No contest.
 
 ### Nested Blockquotes
 Blockquotes can be nested. Add a >> in front of the paragraph you want to nest.
 
 
 ```markdown
-> Dorothy followed her through many of the beautiful rooms in her castle.
+> Why, you stuck-up, half-witted, scruffy-looking nerf herder!
 >
->> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+>> As far as Star Wars insults go, this one takes the cake. No contest.
 ```
+
+The rendered output looks like this:
+> Why, you stuck-up, half-witted, scruffy-looking nerf herder!
+>
+>> As far as Star Wars insults go, this one takes the cake. No contest.
 
 ### Blockquotes with Other Elements
 Blockquotes can contain other Markdown formatted elements. Not all elements can be used — you’ll need to experiment to see which ones work.
 
 ```markdown
-> #### The quarterly results look great!
+> #### Yoda Quotes
 >
-> - Revenue was off the chart.
-> - Profits were higher than ever.
+> - Train yourself to let go of everything you fear to lose.
+> - Powerful you have become, the dark side I sense in you.
 >
->  *Everything* is going according to **plan**.
+>  Yoda Quotes to *Awake* the **Greatness** Within.
 ```
+
+The rendered output looks like this:
+> #### Yoda Quotes
+>
+> - Train yourself to let go of everything you fear to lose.
+> - Powerful you have become, the dark side I sense in you.
+>
+>  Yoda Quotes to *Awake* the **Greatness** Within.
 
 **[back to top](#)**
 
@@ -126,6 +147,12 @@ be in numerical order, but the list should start with the number one.
 1. Fourth item
 ```
 
+The rendered output looks like this:
+1. First item
+1. Second item
+1. Third item
+1. Fourth item
+
 ### Nested Ordered Lists
 To create a nested ordered list, simply add 4 spaces in front of the list item.
 
@@ -137,6 +164,14 @@ To create a nested ordered list, simply add 4 spaces in front of the list item.
     1. Indented item
 1. Fourth item
 ```
+
+The rendered output looks like this:
+1. First item
+1. Second item
+1. Third item
+    1. Indented item
+    1. Indented item
+1. Fourth item
 
 **[back to top](#)**
 
@@ -151,6 +186,12 @@ Indent one or more items to create a nested list.
 - Fourth item
 ```
 
+The rendered output looks like this:
+- First item
+- Second item
+- Third item
+- Fourth item
+
 ### Nested Unordered Lists
 To create a nested unordered list, simply add 4 spaces in front of the list item.
 
@@ -162,5 +203,13 @@ To create a nested unordered list, simply add 4 spaces in front of the list item
     - Indented item
 - Fourth item
 ```
+
+The rendered output looks like this:
+- First item
+- Second item
+- Third item
+    - Indented item
+    - Indented item
+- Fourth item
 
 **[back to top](#)**
