@@ -6,6 +6,7 @@ A quick reference to the Markdown syntax.
   1. [Headings](#headings)
   1. [Paragraphs](#paragraphs)
   1. [Line Breaks](#line-breaks)
+  1. [Emphasis](#emphasis)
 
 ## Headings
 To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use
@@ -41,6 +42,32 @@ To create a line break (&lt;br&gt;), end a line with two or more spaces, and the
 ```markdown
 This is the first line.  
 And this is the second line.
+```
+
+**[back to top](#)**
+
+## Emphasis
+You can add emphasis by making text bold or italic.
+
+### Bold
+To bold text, add two asterisks or underscores before and after a word or phrase. To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.
+
+```markdown
+I just love **bold text**.
+```
+
+### Italic
+To italicize text, add one asterisk or underscore before and after a word or phrase. To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters.
+
+```markdown
+Italicized text is the *cat's meow*.
+```
+
+### Bold and Italic
+To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a word or phrase.
+
+```markdown
+This text is ***really important***.
 ```
 
 **[back to top](#)**
