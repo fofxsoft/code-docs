@@ -17,7 +17,7 @@ should correspond to the heading level. For example, to create a heading level t
 number signs (e.g., ### My Header).
 
 | Markdown       | HTML                         | Output           |
-| -------------- |----------------------------- | ---------------- |
+| -------------- | ---------------------------- | ---------------- |
 | # Level 1      | &lt;h1&gt;Level 1&lt;/h1&gt; | <h1>Level 1</h1> |
 | ## Level 2     | &lt;h2&gt;Level 2&lt;/h2&gt; | <h2>Level 1</h2> |
 | ### Level 3    | &lt;h3&gt;Level 3&lt;/h3&gt; | <h3>Level 1</h3> |
@@ -32,7 +32,7 @@ To create paragraphs, use a blank line to separate one or more lines of text. Yo
 with spaces or tabs.
 
 | Markdown                                                                                                  | HTML                                                                                                                                                            | Output                                                                                                                                                                                                                |
-| --------------------------------------------------------------------------------------------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p>I really like using Markdown.</p><p>I think I'll use it to format all of my documents from now on.</p> | <p>&lt;p&gt;<br>I really like using Markdown.<br>&lt;/p&gt;</p><p>&lt;p&gt;<br>I think I'll use it to format all of my documents from now on.<br>&lt;/p&gt;</p> | <p>I really like using Markdown.</p><p>I think I'll use it to format all of my documents from now on.</p> | <p>I really like using Markdown.</p><p>I think I'll use it to format all of my documents from now on.</p> |
 
 **[back to top](#)**
@@ -40,10 +40,9 @@ with spaces or tabs.
 ## <a id="line-breaks"></a>Line Breaks
 To create a line break (&lt;br&gt;), end a line with two or more spaces, and then type return.
 
-```markdown
-This is the first line.  
-And this is the second line.
-```
+| Markdown                                                  | HTML                                                                                         | Output                                                  |
+| --------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| This is the first line. · ·<br>And this is the second line. | &lt;p&gt;<br>This is the first line.&lt;br&gt;<br>And this is the second line.<br>&lt;/p&gt; | This is the first line.<br>And this is the second line. |
 
 **[back to top](#)**
 
