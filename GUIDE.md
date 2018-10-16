@@ -311,11 +311,11 @@ If the word or phrase you want to denote as code includes one or more tick marks
 ## <a id="code-blocks"></a>Code Blocks
 To create code blocks, start a line with three tick marks (```).
 
-```markdown
-'''
-$ npm install --save-dev
-'''
+~~~markdown
 ```
+$ npm install --save-dev
+```
+~~~
 
 The rendered output looks like this:
 
@@ -324,19 +324,22 @@ $ npm install --save-dev
 ```
 
 ## Code Block Syntax Highlighting
-To create a syntax highlighted code block, you simply add the language on the first line.
+This allows you to add color highlighting for whatever language your code was written in.
+To add syntax highlighting, specify a language next to the tick marks before the fenced
+code block.
 
-```markdown
-'''html
+~~~markdown
+```html
 <link href="/lib/markdown/markdown.css" rel="stylesheet">
 <script src="/lib/markdown/markdown.js"></script>
-'''
 ```
+~~~
 
 Supported Languages
 - html
 - javascript
 - css
+- json
 
 The rendered output looks like this:
 
@@ -344,6 +347,44 @@ The rendered output looks like this:
 <link href="/lib/markdown/markdown.css" rel="stylesheet">
 <script src="/lib/markdown/markdown.js"></script>
 ```
+
+[back to top](#)
+
+## <a id="tables"></a>Tables
+To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|)
+to separate each column. You can optionally add pipes on either end of the table.
+
+```markdown
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+```
+
+The rendered output looks like this:
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+### Alignment
+You can align text in the columns to the left, right, or center by adding a colon (:) to the left,
+right, or on both side of the hyphens within the header row.
+
+```markdown
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+```
+
+The rendered output looks like this:
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
 
 [back to top](#)
 
@@ -376,7 +417,7 @@ You can use a backslash to escape the following characters.
 | \-        | Minus Sign (Hyphen) |
 | \.        | Dot                 |
 | \!        | Exclamation Mark    |
-| \|        | Bar                 |
+| \|        | Pipe                |
 
 > You don't need to always escape these characters. These characters can be escaped, however
 these will need to be escaped when they are inside another element that uses these characters.
