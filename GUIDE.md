@@ -115,7 +115,7 @@ Blockquotes can contain other Markdown formatted elements. Not all elements can 
 
 **[back to top](#)**
 
-## Ordered Lists
+
 To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to
 be in numerical order, but the list should start with the number one.
 
@@ -140,7 +140,7 @@ To create a nested ordered list, simply add 4 spaces in front of the list item.
 
 **[back to top](#)**
 
-
+## Unordered Lists
 To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items.
 Indent one or more items to create a nested list.
 
