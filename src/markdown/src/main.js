@@ -17,6 +17,7 @@ const router = new Router({
         component: markdown,
         props: route => ({
             url: route.query.url,
+            dark: route.query.theme === "dark",
         }),
     }],
 });

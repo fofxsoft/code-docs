@@ -13,6 +13,16 @@ class Markdown {
     constructor(ele, id, value) {
         let url = "";
 
+        if (ele.hasAttribute("dark") && ele.getAttribute("dark") !== "false") {
+            if (url !== "") {
+                url += "&";
+            } else {
+                url += "?";
+            }
+
+            url += "theme=dark";
+        }
+
         if (ele.hasAttribute("url") && ele.getAttribute("url") !== "") {
             if (url !== "") {
                 url += "&";
