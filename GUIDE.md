@@ -219,5 +219,3 @@ The rendered output looks like this:
 - Fourth item
 
 **[back to top](#)**
-
-this is `code`
