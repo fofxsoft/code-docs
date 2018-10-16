@@ -13,6 +13,8 @@ A quick reference to the Markdown syntax.
   1. [Horizontal Rules](#horizontal-rules)
   1. [Links](#links)
   1. [Images](#images)
+  1. [Code](#code)
+  1. [Escaping Characters](#escaping-characters)
 
 ## <a id="headings"></a>Headings
 To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use
@@ -286,5 +288,57 @@ To add a link to an image, enclose the Markdown for the image in brackets, and t
 The rendered output looks like this:
 
 [![MD](https://badgen.net/badge/Markdown/Guide/blue)](https://badgen.net/)
+
+[Back to Top](#)
+
+## <a id="code"></a>Code
+To denote a word or phrase as code, enclose it in tick marks (`).
+
+| Markdown                               | HTML                                                        | Output                               |
+| -------------------------------------- | ----------------------------------------------------------- | ------------------------------------ |
+| In the terminal, type \`npm install\`. | In the terminal, type &lt;code&gt;npm install&lt;/code&gt;. | In the terminal, type `npm install`. |
+
+### Escaping Tick Marks
+If the word or phrase you want to denote as code includes one or more tick marks, you can escape it by enclosing the word or phrase in double tick marks (``).
+
+| Markdown                                    | HTML                                                         | Output                                |
+| ------------------------------------------- | ------------------------------------------------------------ | ------------------------------------- |
+| \`\`Use \`code\` in your Markdown file.\`\` | &lt;code&gt;Use \`code\` in your Markdown file.&lt;/code&gt; | ``Use `code` in your Markdown file.`` |
+
+[Back to Top](#)
+
+## <a id="escaping-characters"></a>Escaping Characters
+To display a literal character that would otherwise be used to format text in a Markdown document,
+add a backslash (\) in front of the character.
+
+```markdown
+\* Without the backslash, this would be a bullet in an unordered list.
+```
+
+The rendered output looks like this:
+
+\* Without the backslash, this would be a bullet in an unordered list.
+
+### Characters You Can Escape
+You can use a backslash to escape the following characters.
+
+| Character | Name                |
+| --------- | ------------------- |
+| \\        | Backslash           |
+| \`        | Tick Mark           |
+| \*        | Asterisk            |
+| \_        | Underscore          |
+| \{\}      | Curly Braces        |
+| \[\]      | Brackets            |
+| \(\)      | Parentheses         |
+| \#        | Pound Sign          |
+| \+        | Plus Sign           |
+| \-        | Minus Sign (Hyphen) |
+| \.        | Dot                 |
+| \!        | Exclamation Mark    |
+| \|        | Bar                 |
+
+> You don't need to always escape these characters. These characters can be escaped, however
+these will need to be escaped when they are inside another element that uses these characters.
 
 [Back to Top](#)
