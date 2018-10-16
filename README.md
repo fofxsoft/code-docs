@@ -4,6 +4,7 @@ An online, dynamic markdown renderer.
 ## Table of Contents
 
   1. [Building](#building)
+  1. [Markdown](#markdown)
   1. [Installing](#installing)
   1. [Usage](#usage)
   1. [Attributes](#attributes)
@@ -11,7 +12,7 @@ An online, dynamic markdown renderer.
   1. [Events](#events)
   1. [License](#license)
 
-## Building
+## <a id="building"></a>Building
 You will need the latest version of [Node](https://nodejs.org/en/download/) installed. The node install will include npm.
 
 **Dependencies**
@@ -30,7 +31,10 @@ $ npm run build
 
 [back to top](#)
 
-## Installing
+## <a id="markdown"></a>Markdown
+[Markdown Guide](https://github.com/fofxsoft/docs/blob/master/GUIDE.md)
+
+## <a id="installing"></a>Installing
 First copy the contents of the build folder to your application. Then include the following in your HTML.
 
 ```html
@@ -40,7 +44,7 @@ First copy the contents of the build folder to your application. Then include th
 
 [back to top](#)
 
-## Usage
+## <a id="usage"></a>Usage
 To include a markdown display on your page, simply add the tag.
 
 ```html
@@ -55,7 +59,7 @@ or
 
 [back to top](#)
 
-## Attributes
+## <a id="attributes"></a>Attributes
 - **id**  
   Required. Defines the id of the markdown container, and defines the access key.
 
@@ -80,7 +84,7 @@ or
 
 [back to top](#)
 
-## Methods
+## <a id="methods"></a>Methods
 The initialization logic will create the markdown object used to access the methods.
 
 - **get(id)**  
@@ -117,7 +121,7 @@ The initialization logic will create the markdown object used to access the meth
 
 [back to top](#)
 
-## Events
+## <a id="events"></a>Events
 Custom events applied to the markdown tag.
 
 - **ready**  
@@ -131,7 +135,7 @@ Custom events applied to the markdown tag.
 
 [back to top](#)
 
-## License
+## <a id="license"></a>License
 [MIT](https://github.com/fofxsoft/code-editor/blob/master/LICENSE.md)
 
 [back to top](#)
