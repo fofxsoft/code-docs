@@ -15,6 +15,7 @@ A quick reference to the Markdown syntax.
   1. [Images](#images)
   1. [Code](#code)
   1. [Code Blocks](#code-blocks)
+  1. [Tables](#tables)
   1. [Escaping Characters](#escaping-characters)
 
 ## <a id="headings"></a>Headings
