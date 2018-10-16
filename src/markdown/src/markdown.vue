@@ -620,7 +620,6 @@
     }
 
     .markdown-body table {
-        display: block;
         width: 100%;
         overflow: auto;
     }
