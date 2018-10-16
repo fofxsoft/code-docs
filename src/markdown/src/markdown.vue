@@ -17,7 +17,7 @@
             return {
                 code: null,
                 html: null,
-                converter: new showdown.Converter(),
+                converter: new showdown.Converter({ tables: true }),
             };
         },
 
