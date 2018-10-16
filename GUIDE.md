@@ -14,6 +14,7 @@ A quick reference to the Markdown syntax.
   1. [Links](#links)
   1. [Images](#images)
   1. [Code](#code)
+  1. [Code Blocks](#code-blocks)
   1. [Escaping Characters](#escaping-characters)
 
 ## <a id="headings"></a>Headings
@@ -306,6 +307,45 @@ If the word or phrase you want to denote as code includes one or more tick marks
 | \`\`Use \`code\` in your Markdown file.\`\` | &lt;code&gt;Use \`code\` in your Markdown file.&lt;/code&gt; | ``Use `code` in your Markdown file.`` |
 
 [Back to Top](#)
+
+## <a id="code-blocks"></a>Code Blocks
+To create code blocks, start a line with three tick marks (```).
+
+```markdown
+ ```
+ $ npm install --save-dev
+ ```
+```
+
+The rendered output looks like this:
+
+```
+$ npm install --save-dev
+```
+
+## Code Block Syntax Highlighting
+To create a syntax highlighted code block, you simply add the language on the first line.
+
+```markdown
+ ```html
+ <link href="/lib/markdown/markdown.css" rel="stylesheet">
+ <script src="/lib/markdown/markdown.js"></script>
+ ```
+```
+
+Supported Languages
+- html
+- javascript
+- css
+
+The rendered output looks like this:
+
+```html
+<link href="/lib/markdown/markdown.css" rel="stylesheet">
+<script src="/lib/markdown/markdown.js"></script>
+```
+
+[back to top](#)
 
 ## <a id="escaping-characters"></a>Escaping Characters
 To display a literal character that would otherwise be used to format text in a Markdown document,
