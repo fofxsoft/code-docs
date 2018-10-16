@@ -10,6 +10,9 @@ A quick reference to the Markdown syntax.
   1. [Blockquotes](#blockquotes)
   1. [Ordered Lists](#ordered-lists)
   1. [Unordered Lists](#unordered-lists)
+  1. [Horizontal Rules](#horizontal-rules)
+  1. [Links](#links)
+  1. [Images](#images)
 
 ## <a id="headings"></a>Headings
 To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use
@@ -25,7 +28,7 @@ number signs (e.g., ### My Header).
 | ##### Jedi Level 5  | &lt;h5&gt;Jedi Level 5&lt;/h5&gt; | <h5>Jedi Level 5</h5> |
 | ###### Jedi Level 6 | &lt;h6&gt;Jedi Level 6&lt;/h6&gt; | <h6>Jedi Level 6</h6> |
 
-**[back to top](#)**
+[Back to Top](#)
 
 ## <a id="paragraphs"></a>Paragraphs
 To create paragraphs, use a blank line to separate one or more lines of text. You should not indent paragraphs
@@ -35,7 +38,7 @@ with spaces or tabs.
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------ |
 | <p>The Force will be with you.</p><p>Always.</p> | <p>&lt;p&gt;The Force will be with you.&lt;/p&gt;</p><p>&lt;p&gt;Always.&lt;/p&gt;</p> | <p>The Force will be with you.</p><p>Always.</p> |
 
-**[back to top](#)**
+[Back to Top](#)
 
 ## <a id="line-breaks"></a>Line Breaks
 To create a line break (&lt;br&gt;), end a line with two or more spaces, and then type return.
@@ -44,7 +47,7 @@ To create a line break (&lt;br&gt;), end a line with two or more spaces, and the
 | -------------------------------------- | --------------------------------------------------------------- | ---------------------------------- |
 | Do. Or do not. · ·<br>There is no try. | &lt;p&gt;Do. Or do not.&lt;br&gt;<br>There is no try.&lt;/p&gt; | Do. Or do not.<br>There is no try. |
 
-**[back to top](#)**
+[Back to Top](#)
 
 ## <a id="emphasis"></a>Emphasis
 You can add emphasis by making text bold or italic.
@@ -73,7 +76,7 @@ To emphasize text with bold and italics at the same time, add three asterisks or
 | ---------------------- | ------------------------------------------------------------ | --------------- |
 | The \*\*\*Force\*\*\*. | The &lt;strong&gt;&lt;em&gt;Force&lt;/em&gt;&lt;/strong&gt;. | The ***Force*** |
 
-**[back to top](#)**
+[Back to Top](#)
 
 ## <a id="blockquotes"></a>Blockquotes
 To create a blockquote, add a &gt; in front of a paragraph.
@@ -134,7 +137,7 @@ The rendered output looks like this:
 >
 >  Yoda Quotes to *Awake* the **Greatness** Within.
 
-**[back to top](#)**
+[Back to Top](#)
 
 ## <a id="ordered-lists"></a>Ordered Lists
 To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to
@@ -176,7 +179,7 @@ The rendered output looks like this:
     1. Indented item
 1. Fourth item
 
-**[back to top](#)**
+[Back to Top](#)
 
 ## <a id="unordered-lists"></a>Unordered Lists
 To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items.
@@ -218,4 +221,68 @@ The rendered output looks like this:
     - Indented item
 - Fourth item
 
-**[back to top](#)**
+[Back to Top](#)
+
+## <a id="horizontal-rules"></a>Horizontal Rules
+To create a horizontal rule, use three or more dashes (---) on a line by themselves.
+
+```markdown
+---
+```
+
+The rendered output looks like this:
+
+---
+
+## <a id="links"></a>Links
+To create a link, enclose the link text in brackets (e.g., [Google]) and then follow it immediately
+with the URL in parentheses (e.g., (https://google.com)).
+
+```markdown
+[Google](https://google.com/)
+```
+
+### Link Titles
+You can optionally add a title for a link. This will appear as a tooltip when the user hovers over
+the link. To add a title, enclose it in parentheses after the URL.
+
+```markdown
+[Google](https://google.com/ "Google Search Engine")
+```
+
+### Formatting Links
+You can format links using [Emphasis](#emphasis) elements.
+
+```markdown
+*[Google](https://google.com/)*
+**[Google](https://google.com/)**
+***[Google](https://google.com/)***
+```
+
+[Back to Top](#)
+
+## <a id="images"></a>Images
+To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path
+or URL to the image asset in parentheses. You can optionally add a title after the URL in the
+parentheses.
+
+```markdown
+![Markdown](https://badgen.net/badge/Markdown/Guide/blue)
+```
+
+The rendered output looks like this:
+
+![Markdown](https://badgen.net/badge/Markdown/Guide/blue)
+
+### Linking Images
+To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.
+
+```markdown
+[![MD](https://badgen.net/badge/Markdown/Guide/blue)](https://badgen.net/)
+```
+
+The rendered output looks like this:
+
+[![MD](https://badgen.net/badge/Markdown/Guide/blue)](https://badgen.net/)
+
+[Back to Top](#)
