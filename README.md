@@ -78,7 +78,7 @@ or
 - **style**  
   Optional. Used to define css style for the markdown container.
 
-- **dark**
+- **dark**  
   Optional. This property sets the markdown to dark mode.
 
 - **value**  
