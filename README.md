@@ -29,10 +29,12 @@ $ npm run build
 
 > The build process will deploy to the build folder.
 
-[back to top](#)
+[Back to Top](#)
 
 ## <a id="markdown"></a>Markdown
 [Markdown Guide](https://github.com/fofxsoft/docs/blob/master/GUIDE.md)
+
+[Back to Top](#)
 
 ## <a id="installing"></a>Installing
 First copy the contents of the build folder to your application. Then include the following in your HTML.
@@ -42,7 +44,7 @@ First copy the contents of the build folder to your application. Then include th
 <script src="/lib/markdown/markdown.js"></script>
 ```
 
-[back to top](#)
+[Back to Top](#)
 
 ## <a id="usage"></a>Usage
 To include a markdown display on your page, simply add the tag.
@@ -57,7 +59,7 @@ or
 <markdown id="skywalker" name="skywalker"></markdown>
 ```
 
-[back to top](#)
+[Back to Top](#)
 
 ## <a id="attributes"></a>Attributes
 - **id**  
@@ -82,7 +84,7 @@ or
 - **innerText**  
   Optional. This is only available for the markdown tag. The innerText will populate the markdown.
 
-[back to top](#)
+[Back to Top](#)
 
 ## <a id="methods"></a>Methods
 The initialization logic will create the markdown object used to access the methods.
@@ -119,7 +121,7 @@ The initialization logic will create the markdown object used to access the meth
   const html = md.html;
   ```
 
-[back to top](#)
+[Back to Top](#)
 
 ## <a id="events"></a>Events
 Custom events applied to the markdown tag.
@@ -133,9 +135,9 @@ Custom events applied to the markdown tag.
   });
   ```
 
-[back to top](#)
+[Back to Top](#)
 
 ## <a id="license"></a>License
 [MIT](https://github.com/fofxsoft/code-editor/blob/master/LICENSE.md)
 
-[back to top](#)
+[Back to Top](#)
